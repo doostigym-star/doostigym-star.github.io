@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>باشگاه دوستی | پنل مدیریت</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f4ef;--paper:#fff;--ink:#24251f;--muted:#85867f;--line:#ecebe5;--gold:#c99d37;--gold-light:#fbf4df;--green:#16945c;--red:#d9434b;--blue:#3979c8;--shadow:0 8px 26px #2827190b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif}button,input,select{font:inherit}button{cursor:pointer}.shell{max-width:1500px;margin:auto;padding:23px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:12px}.brand{display:flex;align-items:center;gap:12px}.logo{width:49px;height:49px;border-radius:15px;background:#22231f;color:#efc44f;display:grid;place-items:center;font-size:25px}.brand h1{margin:0;font-size:20px;font-weight:900}.brand small{color:var(--muted)}.top-actions{display:flex;gap:9px;align-items:center}.date-chip{border:1px solid var(--line);background:white;border-radius:12px;padding:9px 13px;color:var(--muted);font-size:12px}.date-parts{display:flex;direction:rtl;justify-content:center;align-items:center;gap:7px;white-space:nowrap}.date-parts span+span:before{content:"·";margin-left:7px;color:#c2bdaF}.btn{border:0;border-radius:11px;padding:10px 15px;background:#25261f;color:white;font-weight:700}.btn.gold{background:var(--gold);color:#211d12}.btn.light{background:#fff;border:1px solid var(--line);color:#444}.hero{border-radius:22px;padding:25px 30px;background:linear-gradient(105deg,#20221e,#3a392f);color:white;display:flex;align-items:center;justify-content:space-between;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;left:8%;top:-130px;width:300px;height:300px;border:1px solid #ffffff19;border-radius:50%;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff06}.eyebrow{color:#f0c85e;font-size:12px;font-weight:700}.hero h2{font-size:clamp(23px,3vw,34px);margin:7px 0}.hero p{color:#d4d3cb;margin:0;font-size:13px}.hero-symbol{font-size:76px;color:#e7bd50;padding:0 30px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:17px 0}.stat,.panel{background:var(--paper);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.stat{padding:16px 17px;min-width:0}.stat-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}.ico{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;font-size:20px}.ico.gold{background:#fbf2d9;color:#aa7e1c}.ico.green{background:#e8f7ef;color:var(--green)}.ico.red{background:#fff0f0;color:var(--red)}.ico.blue{background:#edf4ff;color:var(--blue)}.stat strong{font-size:clamp(18px,2vw,25px);display:block;margin:9px 0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.stat small{font-size:10px;color:var(--muted)}.main{display:grid;grid-template-columns:340px minmax(0,1fr);gap:16px;align-items:start}.panel{padding:18px}.panel h3{margin:0 0 15px;font-size:16px}.field{margin-bottom:11px}.field label{display:block;font-size:11px;color:var(--muted);margin-bottom:5px}.field input,.field select,.search{width:100%;border:1px solid var(--line);background:#fdfdfa;padding:10px 11px;border-radius:10px;outline:none}.field input:focus,.field select:focus,.search:focus{border-color:var(--gold)}.two{display:grid;grid-template-columns:1fr 1fr;gap:9px}.full{width:100%}.hint{font-size:10px;color:var(--muted);line-height:1.8}.list-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}.list-head h3{margin:0}.search{max-width:240px}.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:11px}.filter{border:1px solid var(--line);border-radius:9px;padding:6px 10px;background:#f8f7f2;color:#777;font-size:11px}.filter.active{background:#272820;color:white}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap;font-size:11px}th{text-align:right;color:#888;background:#faf9f5;padding:12px 9px}td{padding:12px 9px;border-bottom:1px solid #f0efe9}tr:last-child td{border:0}.name{font-weight:800}.name-paid{color:var(--green)}.name-partial{color:#C77700}.name-unpaid{color:var(--red)}.renew-quick{margin-right:5px;color:#8a6415;border-color:#e8d8ad;background:#fff8e8}.muted{display:block;font-size:9px;color:#999;margin-top:3px}.status{display:inline-block;padding:4px 8px;border-radius:20px;font-size:10px;font-weight:700}.paid{background:#e9f7ef;color:var(--green)}.unpaid{background:#fff0f0;color:var(--red)}.pending{background:#edf4ff;color:var(--blue)}.partial{background:#fff1dc;color:#B86A00}.active{background:#fff1dc;color:#B86A00}.expired{background:#fff0f0;color:var(--red)}.days{font-weight:800;color:var(--green)}.over{color:var(--red);font-weight:800}.partial-text{color:#C77700;font-weight:800}.ops{display:flex;gap:4px}.mini{border:1px solid var(--line);background:#f7f6f1;border-radius:7px;padding:5px 7px;color:#555}.mini.del{color:var(--red)}.charts{display:grid;grid-template-columns:1.1fr 1fr .9fr;gap:14px;margin-top:16px}.chart-panel{min-height:220px}.chart-sub{font-size:10px;color:var(--muted);margin-top:-10px}.donut-wrap{display:flex;align-items:center;gap:18px;margin-top:18px}.donut{width:128px;height:128px;border-radius:50%;background:conic-gradient(var(--green) 0 50%,var(--red) 50% 100%);position:relative;flex:none}.donut:after{content:"";position:absolute;inset:22px;background:white;border-radius:50%}.legend{display:grid;gap:12px;font-size:11px}.legend span{display:flex;align-items:center;gap:7px}.dot{width:9px;height:9px;border-radius:50%;display:inline-block}.bar-area{margin-top:22px;display:grid;gap:14px}.barline{display:grid;grid-template-columns:70px 1fr 35px;gap:8px;align-items:center;font-size:10px;color:var(--muted)}.track{height:11px;border-radius:20px;background:#f1f0eb;overflow:hidden}.fill{height:100%;border-radius:20px}.profit-box{background:#f9f7ef;border:1px solid #eee8d6;border-radius:13px;padding:15px;margin-top:18px}.profit-box strong{font-size:24px;display:block;color:var(--green);margin-top:5px}.rent-row{display:flex;gap:8px;align-items:center}.rent-row input{min-width:0}.empty{text-align:center;padding:26px;color:var(--muted)}.member-click{cursor:pointer}.member-click:hover{background:#fbfaf5}.money-left{font-size:22px;font-weight:900;color:var(--red)}.detail-line{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}.detail-line:last-child{border:0}.footer{text-align:center;color:#999;font-size:10px;padding:22px}.modal-bg{position:fixed;inset:0;background:#17181288;display:grid;place-items:center;padding:15px;z-index:5}.modal{background:white;border-radius:18px;padding:22px;width:min(470px,100%)}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h3{margin:0}.close{border:0;border-radius:8px;padding:7px 10px;background:#f3f2ed}.hidden{display:none!important}
+
+.month-control{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0;padding:13px 17px}.month-actions{display:flex;align-items:center;gap:7px}.month-arrow{width:38px;height:38px;font-size:18px}.page-nav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.nav-btn{border:1px solid var(--line);background:#fff;color:#555;padding:10px 17px;border-radius:11px;font-weight:700}.nav-btn.active{background:#25261f;color:#fff;border-color:#25261f}.page-section{margin-top:16px}.trend-panel{margin:16px 0;padding:18px}.trend-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:#343a40;font-weight:800}.trend-legend span{display:flex;align-items:center;gap:6px}.line-chart{width:100%;min-height:210px;overflow:hidden}.line-chart svg{width:100%;height:210px;display:block}.line-chart text{font-family:Vazirmatn,Tahoma,sans-serif;fill:#343a40;font-size:12px;font-weight:800}
+
+
+.profile-modal{width:min(760px,100%);max-height:92vh;overflow:auto;background:linear-gradient(145deg,#fff 0%,#fbfaf5 100%);border:1px solid #eadba9;box-shadow:0 25px 80px #1115}.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:15px 0}.profile-tile{background:#fff;border:1px solid var(--line);border-radius:13px;padding:12px}.profile-tile small{display:block;color:var(--muted);font-size:10px}.profile-tile b{display:block;margin-top:5px;font-size:15px}.profile-section{border-top:1px solid var(--line);padding-top:15px;margin-top:15px}.profile-section h4{margin:0 0 12px}.profile-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.profile-form .field{margin:0}.history-table{width:100%;font-size:10px}.history-table th,.history-table td{padding:9px 7px}.profile-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.premium{background:radial-gradient(circle at 85% 0,#fff7d8 0,transparent 38%),linear-gradient(135deg,#25261f,#414033);color:white;border:0}.premium h3{color:#f2ce68}.premium .stat-top,.premium small{color:#d5d0bd}.nav-btn{transition:.2s;box-shadow:0 3px 12px #15151508}.nav-btn:hover{transform:translateY(-2px);border-color:var(--gold)}.stat,.panel{transition:box-shadow .2s,transform .2s}.stat:hover,.panel:hover{box-shadow:0 12px 30px #2222220d}.name{cursor:pointer}
+@media(max-width:650px){.profile-grid,.profile-form{grid-template-columns:1fr}.month-control{align-items:flex-start;flex-direction:column}.month-actions{width:100%;justify-content:space-between}.month-arrow{flex:1}}
+.jalali-modal{width:min(390px,100%);padding:18px}.picker-selects{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:16px 0 12px}.picker-selects select{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fbfaf6}.calendar-week,.calendar-days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;text-align:center}.calendar-week span{font-size:11px;color:var(--muted);padding:7px 0}.calendar-days button{border:0;background:#f5f4ef;border-radius:9px;padding:9px 0;color:var(--ink)}.calendar-days button:hover{background:var(--gold-light)}.calendar-days button.selected{background:#25261f;color:#fff}.calendar-days button.today{outline:1px solid var(--gold)}.calendar-days .blank{visibility:hidden}.picker-foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:11px;color:var(--muted)}.field input[readonly]{cursor:pointer;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%2385867f' stroke-width='2'%3E%3Crect x='3' y='5' width='18' height='16' rx='2'/%3E%3Cpath d='M16 3v4M8 3v4M3 10h18'/%3E%3C/svg%3E") no-repeat left 11px center;padding-left:38px}
+@media(max-width:1050px){.main{grid-template-columns:1fr}.charts{grid-template-columns:1fr 1fr}.charts .chart-panel:last-child{grid-column:1/-1}}
+@media(max-width:650px){.shell{padding:12px}.top{align-items:flex-start}.top-actions{flex-direction:column;align-items:flex-end}.hero{padding:21px}.hero-symbol{display:none}.stats{grid-template-columns:1fr 1fr;gap:8px}.stat{padding:12px}.panel{padding:13px}.charts{grid-template-columns:1fr}.charts .chart-panel:last-child{grid-column:auto}.list-head{align-items:flex-start;flex-direction:column}.search{max-width:none}.two{grid-template-columns:1fr 1fr}}
+
+/* بازطراحی ظاهری: تم مدرن و خوانا */
+:root{
+ --bg:#f2f5f7;--paper:#ffffff;--ink:#172635;--muted:#71808d;--line:#e2e9ee;
+ --gold:#d7a943;--gold-light:#fff5dc;--green:#138a68;--red:#d94b5b;--blue:#397fbd;
+ --shadow:0 10px 30px #18324712;
+}
+body{background:radial-gradient(ellipse at 8% 0%,#e4f1f2 0,transparent 32%),var(--bg);color:var(--ink)}
+.logo{background:linear-gradient(135deg,#142b3a,#23556a);color:#f5ca66;box-shadow:0 7px 18px #17384a25}
+.hero{background:linear-gradient(115deg,#142b3a 0%,#1d5260 58%,#28776f 100%);box-shadow:0 14px 34px #15394a22}
+.eyebrow{color:#f5d17b}
+.btn{background:#18394b;box-shadow:0 4px 12px #17394b18;transition:.18s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.gold{background:linear-gradient(135deg,#e8bd5e,#d39b31);color:#172635}
+.btn.light{background:#fff;border-color:#dce6eb;color:#284253}
+.stat,.panel{border-color:#e3ebef;box-shadow:var(--shadow)}
+.stat:hover,.panel:hover{box-shadow:0 14px 34px #18324716}
+.nav-btn.active,.filter.active{background:#18394b;border-color:#18394b}
+.nav-btn:hover{border-color:#d5a644}
+.field input:focus,.field select:focus,.search:focus{border-color:#4d9b91;box-shadow:0 0 0 3px #4d9b9118}
+.status.paid{background:#e4f5ef;color:#087552}
+.status.unpaid{background:#ffebed;color:#c53348}
+.status.partial{background:#fff1d8;color:#a96500}
+.status.pending{background:#e8f2ff;color:#2867a4}
+.donut{filter:drop-shadow(0 5px 8px #17263512)}
+/* پنجره جزئیات عضو: عریض، افقی و با اسکرول مطمئن */
+#memberModal{overflow-y:auto;overscroll-behavior:contain;padding:clamp(10px,2.5vw,28px);align-items:center}
+#memberModal>.modal{
+ width:min(1080px, calc(100vw - 36px));
+ max-width:1080px;
+ max-height:calc(100dvh - 36px);
+ overflow-y:auto;
+ overscroll-behavior:contain;
+ padding:clamp(18px,2.2vw,28px);
+ border-radius:22px;
+ border:1px solid #dce8e9;
+ background:linear-gradient(145deg,#fff 0%,#f7fbfa 100%);
+ box-shadow:0 28px 90px #102b3a55;
+}
+#memberModal .modal-head{position:sticky;top:-1px;z-index:3;background:#fff;padding:4px 0 14px;border-bottom:1px solid #e7eef0;margin-bottom:12px}
+#memberModal .modal-head h3{font-size:19px;color:#17394a}
+#memberModal .profile-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:14px 0 18px}
+#memberModal .profile-tile{min-width:0;background:linear-gradient(145deg,#fff,#f6faf9);border:1px solid #e1eceb;border-radius:15px;padding:14px}
+#memberModal .profile-tile b{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
+#memberModal .profile-tile small{color:#71838d}
+#memberModal .profile-section{background:#fff;border:1px solid #e5edef;border-radius:16px;padding:17px;margin-top:14px}
+#memberModal .profile-section h4{color:#1b5360;font-size:15px}
+#memberModal .profile-form{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+#memberModal .profile-actions{gap:9px}
+#memberModal .history-table{font-size:11px}
+#memberModal .history-table th{background:#edf5f4;color:#345765}
+#memberModal .history-table td{border-bottom-color:#edf1f2}
+#memberModal .close{background:#edf4f4;color:#234b58}
+@media(max-width:850px){
+ #memberModal .profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #memberModal .profile-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+ #memberModal{padding:8px;align-items:start}
+ #memberModal>.modal{width:100%;max-height:calc(100dvh - 16px);padding:15px;border-radius:16px}
+ #memberModal .profile-grid,#memberModal .profile-form{grid-template-columns:1fr 1fr;gap:8px}
+ #memberModal .profile-tile{padding:10px}
+ #memberModal .profile-tile b{font-size:12px}
+ #memberModal .profile-section{padding:12px}
+ #memberModal .history-table{min-width:650px}
+}
+
+
+/* Mobile experience: touch-friendly controls, compact cards and readable tables. */
+@media(max-width:650px){
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{overflow-x:hidden}
+  .shell{width:100%;max-width:100%;padding:10px 10px 28px}
+  .top{display:flex;flex-direction:column;align-items:stretch;gap:12px;margin-bottom:14px}
+  .brand{gap:10px}.brand h1{font-size:18px}.brand small{font-size:10px}
+  .top-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%;align-items:stretch}
+  .top-actions>*{min-width:0;text-align:center;justify-content:center}
+  .date-chip{padding:9px 7px;font-size:11px}
+  .top-actions .btn{min-height:43px;padding:9px 8px;font-size:12px}
+  .hero{padding:18px 16px;border-radius:18px;min-height:126px}
+  .hero h2{font-size:22px;line-height:1.6}.hero p{font-size:11px;line-height:1.9}
+  .eyebrow{font-size:10px}
+  .page-nav{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+  .nav-btn{padding:12px 7px;font-size:12px;min-height:44px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}
+  .stat{padding:12px;border-radius:14px}.stat-top{font-size:10px;gap:5px}.ico{width:32px;height:32px;border-radius:10px;font-size:16px}
+  .stat strong{font-size:clamp(15px,4.5vw,20px);margin:8px 0 3px}.stat small{font-size:9px;line-height:1.7}
+  .main,.charts{grid-template-columns:minmax(0,1fr);gap:10px}
+  .charts .chart-panel:last-child{grid-column:auto}
+  .panel{padding:13px;border-radius:15px}.panel h3{font-size:14px;margin-bottom:11px}
+  .field label{font-size:11px}.field input,.field select,.search{min-height:44px;font-size:14px;padding:11px}
+  .btn,.mini,.filter{min-height:38px}.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .list-head{display:flex;flex-direction:column;align-items:stretch;gap:9px}.search{max-width:none;width:100%}
+  .filters{overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}.filter{flex:none;white-space:nowrap;padding:8px 11px}
+  .table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px}
+  table{font-size:10px}th,td{padding:10px 8px}
+  .charts .chart-panel{min-height:0}.donut-wrap{gap:12px;align-items:center}.donut{width:104px;height:104px}.donut:after{inset:18px}.legend{font-size:10px;gap:9px}
+  .barline{grid-template-columns:58px minmax(0,1fr) 34px;gap:6px}
+  .month-control{padding:12px;gap:10px}.month-actions{gap:6px}.month-arrow{min-width:40px;min-height:42px}
+  .profile-modal{max-height:94dvh;padding:13px}.profile-grid,.profile-form{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .profile-tile{min-width:0;padding:10px}.profile-tile b{font-size:12px;overflow-wrap:anywhere}
+  .profile-section{padding-top:12px;margin-top:12px}.history-table{min-width:620px}
+  .modal-bg{padding:8px;align-items:center}.modal{width:100%;max-height:94dvh;overflow:auto;padding:16px}
+  input,select,textarea,button{touch-action:manipulation}
+  .footer{padding:18px 8px}
+}
+/* Button-enabled phone preview on larger screens. The actual phone layout above remains automatic. */
+body.mobile-preview{background:#e8e8e5}
+body.mobile-preview .shell{width:min(100% - 24px,460px);max-width:460px;min-height:100vh;margin:18px auto;padding:12px;background:var(--bg);border:7px solid #24251f;border-radius:34px;box-shadow:0 18px 60px #16161625;overflow:hidden}
+body.mobile-preview .top{display:flex;flex-direction:column;align-items:stretch;gap:12px}
+body.mobile-preview .top-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%}
+body.mobile-preview .top-actions>*{min-width:0;text-align:center;justify-content:center}
+body.mobile-preview .top-actions .btn{min-height:42px;padding:8px;font-size:12px}
+body.mobile-preview .hero{padding:18px 16px;min-height:126px}
+body.mobile-preview .hero h2{font-size:22px}body.mobile-preview .hero p{font-size:11px;line-height:1.9}body.mobile-preview .hero-symbol{display:none}
+body.mobile-preview .page-nav{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+body.mobile-preview .nav-btn{padding:11px 7px;font-size:12px}
+body.mobile-preview .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+body.mobile-preview .stat{padding:12px}body.mobile-preview .stat strong{font-size:18px}
+body.mobile-preview .main,body.mobile-preview .charts{grid-template-columns:minmax(0,1fr);gap:10px}
+body.mobile-preview .charts .chart-panel:last-child{grid-column:auto}
+body.mobile-preview .panel{padding:13px}
+body.mobile-preview .list-head{align-items:stretch;flex-direction:column}
+body.mobile-preview .search{max-width:none;width:100%}
+body.mobile-preview .filters{overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}
+body.mobile-preview .filter{flex:none;white-space:nowrap}
+body.mobile-preview .table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+body.mobile-preview .month-control{align-items:flex-start;flex-direction:column}
+body.mobile-preview .month-actions{width:100%;justify-content:space-between}
+body.mobile-preview .profile-grid,body.mobile-preview .profile-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+body.mobile-preview .profile-modal{max-height:90vh}
+body.mobile-preview .mobile-preview-hint{display:block}
+@media(max-width:650px){body.mobile-preview .shell{width:100%;margin:0;border:0;border-radius:0;box-shadow:none;padding:10px 10px 28px}}
+
+</style>
+</head>
+<body>
+<div id="loginGate" style="min-height:100vh;display:grid;place-items:center;padding:20px;background:var(--bg)">
+ <form id="cloudLoginForm" class="panel" style="width:min(420px,100%);padding:26px">
+  <div class="logo" style="margin:0 auto 15px">✦</div>
+  <h2 style="text-align:center;margin:0 0 8px">ورود به باشگاه دوستی</h2>
+  <p style="text-align:center;color:var(--muted);font-size:12px;line-height:1.9;margin:0 0 20px">برای مشاهده اطلاعات مشترک باشگاه، با حساب مدیر وارد شوید.</p>
+  <div class="field"><label for="cloudEmail">ایمیل مدیر</label><input id="cloudEmail" type="email" autocomplete="username" required></div>
+  <div class="field"><label for="cloudPassword">رمز عبور</label><input id="cloudPassword" type="password" autocomplete="current-password" required></div>
+  <button class="btn gold full" id="cloudLoginBtn" type="submit">ورود امن</button>
+  <p id="cloudLoginMessage" class="hint" role="status" style="margin:12px 0 0;text-align:center"></p>
+ </form>
+</div>
+<div class="shell" id="appShell" style="display:none">
+<header class="top"><div class="brand"><div class="logo">✦</div><div><h1>باشگاه دوستی</h1><small>سامانه مدیریت اعضا و امور مالی</small></div></div><div class="top-actions"><div class="date-chip" style="text-align:center"><div class="date-parts" dir="ltr"><span id="weekday"></span><span id="dayNumber"></span><span id="monthName"></span><span id="yearNumber"></span></div><strong id="clock" style="display:block;font-size:17px;color:#25261f;margin-top:4px">--:--:--</strong><small>ساعت رسمی ایران</small></div><span id="cloudStatus" class="date-chip">اتصال ابری</span><button class="btn light" id="cloudLogoutBtn" type="button">خروج</button><button class="btn light" id="exportBtn">خروجی PDF</button><a class="btn gold" id="androidDownloadBtn" href="./Doosti%20Gym.apk" download="Doosti-Gym.apk" title="دانلود اپلیکیشن اندروید" aria-label="دانلود اپلیکیشن اندروید"><span aria-hidden="true">⤓</span> دانلود نسخه اندروید</a></div></header>
+<section class="hero"><div><div class="eyebrow">DUOSTI FITNESS · پنل مدیریت</div><h2>مدیریت هوشمند باشگاه</h2><p>اعضا، شهریه‌ها، درآمد و هزینه‌های باشگاه در یک نگاه.</p></div><div class="hero-symbol">✦</div></section>
+<nav class="page-nav"><button class="nav-btn active" data-page="dashboard">داشبورد باشگاه</button><button class="nav-btn" data-page="debtors">اعضای بدهکار</button></nav>
+<section id="dashboardPage">
+<div class="panel month-control"><div><small class="chart-sub">گزارش مالی بر اساس ماه شمسی</small><h3 id="selectedMonthLabel" style="margin:4px 0 0">ماه جاری</h3></div><div class="month-actions"><button type="button" class="mini month-arrow" id="prevMonthBtn" title="ماه قبل" aria-label="ماه قبل">❮</button><button type="button" class="btn light" id="thisMonthBtn">ماه جاری</button><button type="button" class="mini month-arrow" id="nextMonthBtn" title="ماه بعد" aria-label="ماه بعد">❯</button></div></div>
+<section class="stats">
+<div class="stat"><div class="stat-top"><span>درآمد وصول‌شده <b id="incomeMonthCaption">این ماه</b></span><span class="ico green">↗</span></div><strong id="income">۰ تومان</strong><small>فقط مبالغی که واقعاً دریافت شده‌اند</small></div>
+<div class="stat"><div class="stat-top"><span>اجاره ماهانه باشگاه</span><span class="ico gold">⌂</span></div><strong id="rentCard">۰ تومان</strong><small>هزینه ثابت ماهانه</small><button type="button" class="mini" id="editRentBtn" style="margin-top:8px">ویرایش اجاره</button></div>
+<div class="stat"><div class="stat-top"><span>سود پس از کسر اجاره</span><span class="ico blue">▥</span></div><strong id="profit">۰ تومان</strong><small>درآمد وصول‌شده منهای اجاره</small></div>
+<div class="stat"><div class="stat-top"><span>شهریه‌های پرداخت‌نشده</span><span class="ico red">!</span></div><strong id="unpaidTotal">۰ تومان</strong><small id="unpaidCount">۰ عضو بدهکار</small></div>
+</section>
+
+<section class="charts">
+<div class="panel chart-panel"><h3>وضعیت پرداخت شهریه‌ها</h3><p class="chart-sub">تعداد اعضای تسویه‌شده، در انتظار و دارای مانده</p><div class="donut-wrap"><div class="donut" id="donut"></div><div class="legend"><span><i class="dot" style="background:var(--green)"></i> پرداخت‌شده: <b id="paidCount">۰</b> نفر</span><span><i class="dot" style="background:var(--blue)"></i> در انتظار سررسید: <b id="pendingCount">۰</b> نفر</span><span><i class="dot" style="background:#C77700"></i> پرداخت بخشی: <b id="partialCount">۰</b> نفر</span><span><i class="dot" style="background:var(--red)"></i> پرداخت‌نشده: <b id="notPaidCount">۰</b> نفر</span><span>کل اعضا: <b id="allCount">۰</b> نفر</span></div></div></div>
+<div class="panel chart-panel"><h3>مقایسه درآمد و اجاره</h3><p class="chart-sub">بر اساس اطلاعات ثبت‌شده فعلی</p><div class="bar-area"><div class="barline"><span>درآمد</span><div class="track"><div class="fill" id="incomeBar" style="background:#0756B5;width:0%"></div></div><b id="incomePct">۰</b></div><div class="barline"><span>اجاره</span><div class="track"><div class="fill" id="rentBar" style="background:#D99A00;width:0%"></div></div><b id="rentPct">۰</b></div></div><div class="profit-box"><span class="hint">سود تخمینی پس از کسر اجاره</span><strong id="profitSmall">۰ تومان</strong></div></div>
+<div class="panel chart-panel"><h3>خلاصه مالی</h3><p class="chart-sub">جمع مبالغ پرونده‌ها</p><div class="bar-area"><div class="barline"><span>وصول‌شده</span><b id="paidMoney" style="color:#0756B5">۰</b><span>تومان</span></div><div class="barline"><span>بدهی اعضا</span><b id="debtMoney" style="color:var(--red)">۰</b><span>تومان</span></div><div class="barline"><span>اجاره</span><b id="rentMoney" style="color:#D99A00">۰</b><span>تومان</span></div></div><p class="hint" style="margin-top:20px">نکته: سود این نسخه برابر درآمد وصول‌شده منهای اجاره ماهانه است و هنوز سایر هزینه‌ها در آن لحاظ نمی‌شود.</p></div>
+</section>
+<div class="main">
+<section class="panel"><h3 id="formTitle">＋ ثبت‌نام عضو جدید</h3><form id="memberForm"><input id="editId" type="hidden">
+<div class="field"><label>نام و نام خانوادگی</label><input id="name" required maxlength="100" placeholder="مثلاً علی محمدی"></div>
+<div class="field"><label>شماره تلفن</label><input id="phone" required maxlength="20" placeholder="09xxxxxxxxx"></div>
+<div class="two"><div class="field"><label>تاریخ ثبت‌نام (شمسی)</label><input id="joinJalali" type="text" placeholder="برای انتخاب تاریخ کلیک کنید" readonly required aria-label="انتخاب تاریخ ثبت‌نام"><input id="join" type="hidden"></div><div class="field"><label>مدت عضویت</label><select id="duration"><option value="1">۱ ماهه</option><option value="2">۲ ماهه</option><option value="3">۳ ماهه</option><option value="6">۶ ماهه</option></select></div></div>
+<div class="field"><label>مبلغ شهریه (تومان)</label><input id="price" type="number" min="0" required placeholder="مثلاً ۸۰۰۰۰۰"></div>
+<div class="field"><label>وضعیت پرداخت شهریه</label><select id="payment"><option value="paid">پرداخت کامل شده</option><option value="unpaid">پرداخت نشده</option><option value="partial">بخشی از شهریه پرداخت شده</option></select></div><div class="field hidden" id="paidAmountWrap"><label>مبلغی که تاکنون پرداخت شده (تومان)</label><input id="paidAmount" type="number" min="0" placeholder="مبلغ پرداخت‌شده را وارد کنید"></div>
+<button class="btn gold full" id="saveBtn">ثبت عضو</button><button type="button" class="btn light full hidden" id="cancelEdit" style="margin-top:7px">لغو ویرایش</button></form>
+<hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+<h3>⌂ تنظیم اجاره ماهانه</h3><div class="field"><label>مبلغ اجاره (تومان)</label><div class="rent-row"><input id="rentInput" type="number" min="0" placeholder="مبلغ اجاره"><button class="btn gold" id="saveRent">ذخیره</button></div></div><p class="hint">اطلاعات پس از ورود مدیر، در پایگاه داده ابری ذخیره و بین دستگاه‌ها همگام می‌شود.</p></section>
+<section class="panel"><div class="list-head"><h3>مدیریت اعضا</h3><input class="search" id="search" placeholder="جست‌وجوی نام یا تلفن"></div><div class="filters"><button class="filter active" data-filter="all">همه</button><button class="filter" data-filter="paid">شهریه پرداخت‌شده</button><button class="filter" data-filter="unpaid">پرداخت‌نشده</button><button class="filter" data-filter="partial">پرداخت ناقص</button><button class="filter" data-filter="expired">عضویت منقضی</button></div>
+<div class="table-wrap"><table><thead><tr><th>نام عضو</th><th>شماره تلفن</th><th>شروع</th><th>پایان</th><th>روز شمار</th><th>شهریه</th><th>پرداخت</th><th>عملیات</th></tr></thead><tbody id="tbody"></tbody></table><div id="empty" class="empty">هنوز عضوی ثبت نشده است.</div></div></section>
+</div>
+</section>
+<section id="debtorsPage" class="page-section hidden"><div class="panel"><div class="list-head"><div><h2>اعضای دارای بدهی شهریه</h2><p class="chart-sub">اعضای دارای مانده؛ مرتب‌شده از بیشترین مبلغ بدهی تا کمترین</p></div><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><strong id="debtorSummary">۰ نفر</strong><button type="button" class="btn light" id="exportDebtorsBtn">خروجی PDF بدهکارها</button></div></div><div class="table-wrap"><table><thead><tr><th>نام عضو</th><th>تلفن</th><th>پایان عضویت</th><th>مدت تأخیر</th><th>کل شهریه</th><th>پرداختی</th><th>مانده بدهی</th><th>وضعیت</th></tr></thead><tbody id="debtorsBody"></tbody></table><div id="debtorsEmpty" class="empty">در حال حاضر عضوی با بدهی شهریه وجود ندارد.</div></div></div></section>
+
+
+<div class="footer">باشگاه دوستی · نسخه متصل به فضای ابری</div>
+</div>
+<div class="modal-bg hidden" id="memberModal"><div class="modal"><div class="modal-head"><h3>جزئیات شهریه عضو</h3><button class="close" id="closeMemberModal">✕</button></div><div id="memberDetails"></div></div></div>
+<div class="modal-bg hidden" id="confirmModal"><div class="modal"><div class="modal-head"><h3>حذف عضو</h3><button class="close" id="closeConfirm">✕</button></div><p>از حذف این عضو مطمئن هستید؟</p><button class="btn" id="confirmDelete">بله، حذف شود</button><button class="btn light" id="cancelDelete">انصراف</button></div></div>
+<div id="jalaliPicker" class="modal-bg hidden" role="dialog" aria-modal="true" aria-label="انتخاب تاریخ شمسی"><div class="modal jalali-modal"><div class="modal-head"><h3>انتخاب تاریخ شمسی</h3><button type="button" class="close" id="pickerClose">بستن</button></div><div class="picker-selects"><select id="pickerYear" aria-label="سال"></select><select id="pickerMonth" aria-label="ماه"></select></div><div class="calendar-week"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div><div id="pickerDays" class="calendar-days"></div><div class="picker-foot"><span id="pickerSelected">تاریخی انتخاب نشده</span><button type="button" class="btn light" id="pickerToday">امروز</button></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL="https://mcniowclmlltiuspvmku.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_yUmSjUbSRIeuzhGtyB6ONw_t_6VFQJk";
+const cloudClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+let cloudSession=null,cloudReady=false,cloudSaveTimer=null,cloudSaveChain=Promise.resolve(),cloudLastUpdatedAt='',cloudLocalDirty=false;
+const $=id=>document.getElementById(id);
+function normalizePeople(list){return (Array.isArray(list)?list:[]).map(p=>{
+ let renewals=(Array.isArray(p.renewals)?p.renewals:[]).map(r=>({...r,id:r.id||('ren_'+Math.random().toString(36).slice(2,10))}));
+ let payments=Array.isArray(p.payments)?p.payments.slice():null;
+ if(!payments){payments=[];let initialPaid=Number(p.initial_paid??0)||0;if(initialPaid>0)payments.push({date:p.join||todayISO(),amount:initialPaid,note:'پرداخت ثبت‌نام اولیه'});renewals.forEach(r=>{let amount=Number(r.paid)||0;if(amount>0)payments.push({date:r.paidAt||r.date||todayISO(),amount,note:'پرداخت تمدید'})});let historicTotal=payments.reduce((a,t)=>a+(Number(t.amount)||0),0),currentPaid=Number(p.paid_amount)||0;if(currentPaid>historicTotal)payments.push({date:todayISO(),amount:currentPaid-historicTotal,note:'پرداخت ثبت‌شده در نسخه قبلی (تاریخ دقیق موجود نبود)'});}
+ return {...p,paid_amount:p.paid_amount===undefined?(p.payment==='paid'?Number(p.price):0):Number(p.paid_amount),renewals,payments,plan:p.plan||'عادی'};
+})}
+let people=normalizePeople(JSON.parse(localStorage.getItem('dosti_members_v1')||'[]'));
+let rent=Number(localStorage.getItem('dosti_rent_v1')||0);
+let filter='all',deleteId=null,selectedMonthOffset=0,lastAutoMonthKey=null;
+function setCloudStatus(message){let el=$('cloudStatus');if(el)el.textContent=message}
+function showApp(){ $('loginGate').style.display='none';$('appShell').style.display='block';$('designerCredit').style.display='block'; }
+function showLogin(message=''){ $('appShell').style.display='none';$('designerCredit').style.display='none';$('loginGate').style.display='grid';$('cloudLoginMessage').textContent=message; }
+async function syncCloudState(){
+ if(!cloudSession||!cloudReady)return;
+ setCloudStatus('در حال همگام‌سازی…');
+ const payload={id:'main',members:people,rent,updated_at:new Date().toISOString()};
+ const {error}=await cloudClient.from('gym_state').upsert(payload,{onConflict:'id'});
+ if(error){setCloudStatus('خطا در ذخیره ابری');console.error(error);alert('ذخیره ابری انجام نشد: '+error.message);return}
+ cloudLastUpdatedAt=payload.updated_at;cloudLocalDirty=false;setCloudStatus('همگام‌سازی شد');
+}
+function queueCloudSave(){if(!cloudSession||!cloudReady)return;cloudLocalDirty=true;clearTimeout(cloudSaveTimer);cloudSaveTimer=setTimeout(()=>{cloudSaveChain=cloudSaveChain.then(syncCloudState).catch(console.error)},450)}
+async function pullCloudUpdates(){if(!cloudSession||!cloudReady||cloudLocalDirty)return;const {data,error}=await cloudClient.from('gym_state').select('members,rent,updated_at').eq('id','main').maybeSingle();if(error){console.warn('Cloud refresh failed:',error.message);return}if(data&&data.updated_at&&data.updated_at!==cloudLastUpdatedAt){people=normalizePeople(data.members||[]);rent=Number(data.rent)||0;cloudLastUpdatedAt=data.updated_at;localStorage.setItem('dosti_members_v1',JSON.stringify(people));localStorage.setItem('dosti_rent_v1',String(rent));render();setCloudStatus('اطلاعات از دستگاه دیگر به‌روز شد')}}
+async function activateCloud(session){
+ cloudSession=session;setCloudStatus('در حال بررسی دسترسی…');
+ const {data:allowed,error:accessError}=await cloudClient.rpc('is_gym_admin');
+ if(accessError||allowed!==true){cloudSession=null;await cloudClient.auth.signOut();showLogin('این حساب اجازه دسترسی به اطلاعات باشگاه را ندارد. مدیر باید حساب را در فهرست مدیران مجاز ثبت کند.');return}
+ setCloudStatus('در حال دریافت اطلاعات…');
+ const {data,error}=await cloudClient.from('gym_state').select('members,rent,updated_at').eq('id','main').maybeSingle();
+ if(error){setCloudStatus('خطای اتصال');showLogin('خطا در دریافت اطلاعات: '+error.message);return}
+ if(data){people=normalizePeople(data.members||[]);rent=Number(data.rent)||0;cloudLastUpdatedAt=data.updated_at||'';localStorage.setItem('dosti_members_v1',JSON.stringify(people));localStorage.setItem('dosti_rent_v1',String(rent));}
+ else {
+  const localMembers=normalizePeople(JSON.parse(localStorage.getItem('dosti_members_v1')||'[]'));
+  const localRent=Number(localStorage.getItem('dosti_rent_v1')||0);
+  if(localMembers.length||localRent){people=localMembers;rent=localRent;}
+ }
+ cloudReady=true;cloudLocalDirty=false;showApp();updateClock();reset();render();
+ if(!data&&(people.length||rent)){await syncCloudState();setCloudStatus('اطلاعات این دستگاه به ابر منتقل شد')}
+ else if(!data){setCloudStatus('فضای ابری آماده؛ هنوز داده‌ای ثبت نشده')}
+ else setCloudStatus('اطلاعات ابری دریافت شد');
+}
+function save(){localStorage.setItem('dosti_members_v1',JSON.stringify(people));render();queueCloudSave()}
+function todayISO(){let a=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tehran',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()),o={};a.forEach(x=>o[x.type]=x.value);return `${o.year}-${o.month}-${o.day}`}
+function recordPayment(p,amount,note='پرداخت شهریه',date=todayISO(),relatedId=null){amount=Number(amount)||0;if(!Array.isArray(p.payments))p.payments=[];if(amount!==0)p.payments.push({id:'pay_'+Math.random().toString(36).slice(2,10),date,amount,note,relatedId})}
+
+function addDays(iso,n){let [y,m,d]=String(iso).split('-').map(Number),x=new Date(Date.UTC(y,m-1,d+Number(n)));return `${x.getUTCFullYear()}-${String(x.getUTCMonth()+1).padStart(2,'0')}-${String(x.getUTCDate()).padStart(2,'0')}`}
+// در این سامانه هر ماه عضویت دقیقاً ۳۰ روز است؛ ماه تقویمی ملاک نیست.
+function addMonths(iso,n){return addDays(iso,Number(n)*30)}
+function diff(a,b){return Math.round((new Date(b+'T00:00:00')-new Date(a+'T00:00:00'))/86400000)}
+function fa(n){return Number(n||0).toLocaleString('fa-IR')}
+function money(n){return fa(n)+' تومان'}
+function dateFa(s){return new Intl.DateTimeFormat('fa-IR-u-ca-persian',{year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(s+'T12:00:00'))}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function info(p){
+ let initialMonths=[1,2,3,6].includes(Number(p.duration))?Number(p.duration):1;
+ let renewals=Array.isArray(p.renewals)?p.renewals:[];
+ let renewalMonths=renewals.reduce((sum,r)=>sum+([1,2,3,6].includes(Number(r.months))?Number(r.months):0),0);
+ let end=addMonths(p.join,initialMonths);
+ // تمدیدها پشت سر هم و از پایان دوره قبلی محاسبه می‌شوند؛ از جمع‌زدن ماه‌ها از تاریخ شروع جلوگیری می‌کنیم.
+ for(const r of renewals){let m=Number(r.months);if([1,2,3,6].includes(m))end=addMonths(end,m)}
+ let d=diff(todayISO(),end),months=initialMonths+renewalMonths;
+ return {end,d,expired:d<=0,months,initialMonths,renewalMonths};
+}
+function actualPaymentState(p){let paid=Number(p.paid_amount)||0,price=Number(p.price)||0;if(paid>=price&&price>0)return 'paid';if(paid>0)return 'partial';return 'unpaid'}
+function paymentState(p){let actual=actualPaymentState(p),x=info(p);if(actual==='partial')return 'partial';if(x.expired)return 'unpaid';if(actual==='paid')return 'paid';return x.d<=7?'pending':'paid'}
+function latestPaymentDate(p){return (p.payments||[]).filter(t=>(Number(t.amount)||0)>0).map(t=>t.date||'').sort().pop()||''}
+function normalizeDigits(s){return String(s||'').replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d))}
+function jalaliParts(iso){let parts=new Intl.DateTimeFormat('en-u-ca-persian-nu-latn',{year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(iso+'T12:00:00'));let o={};parts.forEach(p=>o[p.type]=p.value);return `${o.year}/${o.month}/${o.day}`}
+function jalaliToISO(value){
+ let m=normalizeDigits(value).trim().match(/^(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})$/);if(!m)return null;
+ let jy=+m[1],jm=+m[2],jd=+m[3];if(jm<1||jm>12||jd<1||jd>31)return null;
+ let target=`${jy}/${String(jm).padStart(2,'0')}/${String(jd).padStart(2,'0')}`;
+ let start=new Date(Date.UTC(jy+621,2,15)),end=new Date(Date.UTC(jy+622,2,25));
+ for(let t=start.getTime();t<=end.getTime();t+=86400000){let d=new Date(t),iso=`${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}-${String(d.getUTCDate()).padStart(2,'0')}`;if(jalaliParts(iso)===target)return iso}
+ return null;
+}
+function updateClock(){
+ let now=new Date();
+ let parts=new Intl.DateTimeFormat('fa-IR-u-ca-persian',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Tehran'}).formatToParts(now);
+ let values={};parts.forEach(part=>{if(part.type!=='literal')values[part.type]=part.value});
+ $('weekday').textContent=values.weekday||'';
+ $('dayNumber').textContent=values.day||'';
+ $('monthName').textContent=values.month||'';
+ $('yearNumber').textContent=values.year||'';
+ $('clock').textContent=new Intl.DateTimeFormat('fa-IR',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Asia/Tehran'}).format(now);
+ let jp=currentJalali(),autoKey=`${jp.y}/${jp.m}`;if(lastAutoMonthKey&&lastAutoMonthKey!==autoKey){selectedMonthOffset=0;render()}lastAutoMonthKey=autoKey;
+}
+function setPaymentFields(){
+ let mode=$('payment').value;
+ $('paidAmountWrap').classList.toggle('hidden',mode!=='partial');
+ if(mode==='paid')$('paidAmount').value=$('price').value||'';
+ if(mode==='unpaid')$('paidAmount').value=0;
+}
+function reset(){
+ $('memberForm').reset();$('editId').value='';$('join').value=todayISO();$('joinJalali').value=jalaliParts(todayISO());
+ $('formTitle').textContent='＋ ثبت‌نام عضو جدید';$('saveBtn').textContent='ثبت عضو';$('cancelEdit').classList.add('hidden');
+ $('paidAmountWrap').classList.add('hidden');
+}
+function drawLineChart(target, series){
+ const el=$(target); if(!el)return;
+ const W=900,H=230,L=58,R=22,T=20,B=36;
+ const values=series.flatMap(x=>x.values).filter(v=>Number.isFinite(v));
+ const max=Math.max(1,...values),min=Math.min(0,...values),range=max-min||1;
+ const count=Math.max(1,series[0].values.length-1);
+ const x=i=>L+i*(W-L-R)/count, y=v=>T+(max-v)*(H-T-B)/range;
+ let grid='';
+ for(let k=0;k<5;k++){
+  let yy=T+k*(H-T-B)/4;
+  grid+=`<line x1="${L}" y1="${yy}" x2="${W-R}" y2="${yy}" stroke="#c7cbd1" stroke-width="1.2" stroke-dasharray="4 4"/>`;
+ }
+ if(min<0 && max>0){let zy=y(0);grid+=`<line x1="${L}" y1="${zy}" x2="${W-R}" y2="${zy}" stroke="#68717d" stroke-width="1.8"/>`;}
+ let paths=series.map(a=>{
+  let segments=[],current=[];
+  a.values.forEach((v,i)=>{if(Number.isFinite(v))current.push([x(i),y(v),v]);else if(current.length){segments.push(current);current=[]}});
+  if(current.length)segments.push(current);
+  return segments.map(pts=>{
+   let d=pts.map((pt,i)=>`${i?'L':'M'}${pt[0]},${pt[1]}`).join(' ');
+   let dots=pts.map(pt=>`<circle cx="${pt[0]}" cy="${pt[1]}" r="4.6" fill="${a.color}" stroke="#fff" stroke-width="2"/>`).join('');
+   return `<path d="${d}" fill="none" stroke="${a.color}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>${dots}`;
+  }).join('');
+ }).join('');
+ let labels=series[0].labels.map((v,i)=>`<text x="${x(i)}" y="${H-9}" text-anchor="middle">${v}</text>`).join('');
+ el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="نمودار خطی درآمد، اجاره، سود و ضرر">${grid}${paths}${labels}</svg>`;
+}
+function jalaliMonthKey(iso){return jalaliParts(iso).slice(0,7)}
+function shiftJalaliMonth(y,m,delta){let n=y*12+(m-1)+delta;return {y:Math.floor(n/12),m:((n%12)+12)%12+1}}
+function selectedMonthKey(){let now=jalaliParts(todayISO()).split('/').map(Number),q=shiftJalaliMonth(now[0],now[1],selectedMonthOffset);return `${q.y}/${String(q.m).padStart(2,'0')}`}
+function selectedMonthTitle(){let key=selectedMonthKey(),iso=jalaliToISO(`${key}/01`);return iso?new Intl.DateTimeFormat('fa-IR-u-ca-persian',{month:'long',year:'numeric'}).format(new Date(iso+'T12:00:00')):key}
+function renderTrend(){
+ let nowParts=jalaliParts(todayISO()).split('/').map(Number),months=[],center=shiftJalaliMonth(nowParts[0],nowParts[1],selectedMonthOffset);
+ for(let offset=-2;offset<=2;offset++){let q=shiftJalaliMonth(center.y,center.m,offset),key=`${q.y}/${String(q.m).padStart(2,'0')}`,iso=jalaliToISO(`${key}/01`);months.push({key,label:iso?new Intl.DateTimeFormat('fa-IR-u-ca-persian',{month:'short',year:'2-digit'}).format(new Date(iso+'T12:00:00')):key,income:0})}
+ people.forEach(p=>(p.payments||[]).forEach(t=>{let amount=Number(t.amount)||0,m=months.find(x=>x.key===jalaliMonthKey(t.date));if(m&&amount>0)m.income+=amount}));
+ let labels=months.map(m=>m.label),incomeValues=months.map(m=>m.income),profitValues=months.map(m=>m.income-rent);
+ drawLineChart('incomeTrend',[
+  {color:'#0756B5',labels,values:incomeValues},
+  {color:'#D99A00',labels,values:months.map(()=>rent)},
+  {color:'#087A3E',labels,values:profitValues.map(v=>v>0?v:null)},
+  {color:'#C62828',labels,values:profitValues.map(v=>v<0?v:null)}
+ ]);
+}
+function renderDebtors(){let rows=people.filter(p=>['unpaid','partial'].includes(paymentState(p))&&Math.max(0,(Number(p.price)||0)-(Number(p.paid_amount)||0))>0).map(p=>({...p,ix:info(p),paid:Number(p.paid_amount)||0,price:Number(p.price)||0,st:paymentState(p)})).sort((a,b)=>(b.price-b.paid)-(a.price-a.paid));$('debtorSummary').textContent=fa(rows.length)+' نفر';$('debtorsEmpty').classList.toggle('hidden',rows.length>0);$('debtorsBody').innerHTML=rows.map(p=>`<tr class="member-click" data-debtor-member="${p.id}"><td><b class="${p.st==='partial'?'partial-text':'over'}">${esc(p.name)}</b></td><td>${esc(p.phone)}</td><td>${dateFa(p.ix.end)}</td><td>${p.ix.expired?`<b class="over">${p.ix.d===0?'سررسید امروز':fa(-p.ix.d)+' روز تأخیر'}</b>`:`${fa(p.ix.d)} روز تا پایان`}</td><td>${money(p.price)}</td><td>${money(p.paid)}</td><td><b class="${p.st==='partial'?'partial-text':'over'}">${money(p.price-p.paid)}</b></td><td><span class="status ${p.st==='partial'?'partial':'unpaid'}">${p.st==='partial'?'بخشی پرداخت شده':'پرداخت نشده'}</span></td></tr>`).join('')}
+function incomeForSelectedMonth(){let key=selectedMonthKey();return people.reduce((sum,p)=>sum+(p.payments||[]).reduce((v,t)=>{let amount=Number(t.amount)||0;return v+(amount>0&&jalaliMonthKey(t.date)===key?amount:0)},0),0)}
+function render(){
+ let currentMonth=selectedMonthKey();let income=incomeForSelectedMonth();
+ let debt=people.reduce((s,p)=>s+(['unpaid','partial'].includes(paymentState(p))?Math.max(0,(Number(p.price)||0)-(Number(p.paid_amount)||0)):0),0);
+ $('selectedMonthLabel').textContent=selectedMonthTitle();$('incomeMonthCaption').textContent=selectedMonthOffset===0?'ماه جاری':'ماه انتخاب‌شده';$('thisMonthBtn').classList.toggle('gold',selectedMonthOffset===0);
+ let unpaidCount=people.filter(p=>paymentState(p)==='unpaid').length;
+ let profit=income-rent;
+ $('income').textContent=money(income);$('rentCard').textContent=money(rent);$('profit').textContent=money(profit);$('profitSmall').textContent=money(profit);$('profit').style.color=profit>=0?'#087A3E':'#C62828';$('profitSmall').style.color=profit>=0?'#087A3E':'#C62828';
+ $('unpaidTotal').textContent=money(debt);$('unpaidCount').textContent=fa(unpaidCount)+' عضو دارای مانده شهریه';
+ $('paidMoney').textContent=fa(income);$('debtMoney').textContent=fa(debt);$('rentMoney').textContent=fa(rent);$('rentInput').value=rent||'';
+ let fully=people.filter(p=>paymentState(p)==='paid').length;
+ let pending=people.filter(p=>paymentState(p)==='pending').length;
+ let partial=people.filter(p=>paymentState(p)==='partial').length;
+ let none=people.filter(p=>paymentState(p)==='unpaid').length;
+ $('paidCount').textContent=fa(fully);$('pendingCount').textContent=fa(pending);$('partialCount').textContent=fa(partial);$('notPaidCount').textContent=fa(none);$('allCount').textContent=fa(people.length);
+ let total=people.length||1,a=fully/total*100,b=pending/total*100,c=partial/total*100;
+ $('donut').style.background=`conic-gradient(var(--green) 0 ${a}%,var(--blue) ${a}% ${a+b}%, #C77700 ${a+b}% ${a+b+c}%,var(--red) ${a+b+c}% 100%)`;
+ let max=Math.max(income,rent,1);$('incomeBar').style.width=(income/max*100)+'%';$('rentBar').style.width=(rent/max*100)+'%';$('incomeBar').style.background='#0756B5';$('rentBar').style.background='#D99A00';
+ $('incomePct').textContent=fa(Math.round(income/max*100))+'٪';$('rentPct').textContent=fa(Math.round(rent/max*100))+'٪';
+ let q=$('search').value.trim().toLowerCase();
+ let list=people.filter(p=>{let x=info(p),st=paymentState(p);
+ return (filter==='all'||(filter==='expired'?x.expired:st===filter))&&(p.name.toLowerCase().includes(q)||p.phone.toLowerCase().includes(q))
+ }).sort((a,b)=>{let rank={unpaid:0,partial:1,paid:2,pending:2},ra=rank[paymentState(a)]??2,rb=rank[paymentState(b)]??2;if(ra!==rb)return ra-rb;if(ra===0)return info(a).d-info(b).d;return latestPaymentDate(b).localeCompare(latestPaymentDate(a))||a.name.localeCompare(b.name,'fa')});
+ $('empty').classList.toggle('hidden',list.length>0);
+ $('tbody').innerHTML=list.map(p=>{
+ let x=info(p),paid=Number(p.paid_amount)||0,price=Number(p.price)||0,left=Math.max(0,price-paid),st=paymentState(p);
+ let label=st==='paid'?'تسویه کامل':st==='partial'?'پرداخت بخشی':st==='pending'?'در انتظار سررسید':'پرداخت نشده';
+ let realState=st,nameColor=realState==='paid'||realState==='pending'?'name-paid':realState==='partial'?'name-partial':'name-unpaid';
+ return `<tr class="member-click" data-member="${p.id}"><td><span class="name ${nameColor}">${esc(p.name)}</span>${realState==='unpaid'?` <button type="button" class="mini renew-quick" data-act="renew" data-id="${p.id}">تمدید</button>`:''}<span class="muted">دوره اولیه: ${fa(x.initialMonths)} ماه · تمدیدها: ${fa(x.renewalMonths)} ماه · جزئیات</span></td><td>${esc(p.phone)}</td><td>${dateFa(p.join)}</td><td>${dateFa(x.end)}</td><td>${x.expired?`<span class="over">${x.d===0?'سررسید امروز':fa(-x.d)+' روز گذشته'}</span>`:`<span class="days">${fa(x.d)} روز مانده</span>`}</td><td>${money(price)}</td><td><span class="status ${st==='paid'?'paid':st==='pending'?'pending':st==='partial'?'partial':'unpaid'}">${label}</span><span class="muted">مانده: ${fa(left)} تومان</span></td><td><div class="ops"><button class="mini" data-act="toggle" data-id="${p.id}" title="تغییر وضعیت پرداخت">⇄</button><button class="mini" data-act="edit" data-id="${p.id}">✎</button><button class="mini del" data-act="delete" data-id="${p.id}">⌫</button></div></td></tr>`;
+ }).join('');
+ renderTrend();renderDebtors();
+}
+function showMember(p){
+ let x=info(p),paid=Number(p.paid_amount)||0,price=Number(p.price)||0,left=Math.max(0,price-paid);
+ let renewals=(p.renewals||[]).slice().reverse();
+ let history=[{date:p.join,months:p.duration,price:p.initial_price??p.price,paid:p.initial_paid??p.paid_amount,plan:p.initial_plan||p.plan||'عادی',label:'ثبت‌نام اولیه'},...renewals.slice().reverse().map(r=>({...r,label:'تمدید'}))];
+ $('memberDetails').innerHTML=`<div class="profile-grid">
+ <div class="profile-tile"><small>نام و نام خانوادگی</small><b>${esc(p.name)}</b></div>
+ <div class="profile-tile"><small>شماره تماس</small><b>${esc(p.phone)}</b></div>
+ <div class="profile-tile"><small>اولین روز حضور در باشگاه</small><b>${dateFa(p.join)}</b></div>
+ <div class="profile-tile"><small>پایان فعلی عضویت (با احتساب تمدیدها)</small><b>${dateFa(x.end)}</b></div>
+ <div class="profile-tile"><small>مدت عضویت</small><b>${fa(x.initialMonths)} ماه اولیه + ${fa(x.renewalMonths)} ماه تمدید</b></div>
+ <div class="profile-tile"><small>مبلغ شهریه دوره جاری</small><b>${money(price)}</b></div>
+ <div class="profile-tile"><small>وضعیت پرداخت دوره جاری</small><b class="${left?'over':'days'}">${left?(x.expired?'بدهی ':'مانده تا سررسید ')+money(left):'تسویه کامل'}</b></div>
+ </div>
+ <div class="profile-actions"><button class="btn gold" id="profilePayment">تغییر وضعیت / ثبت پرداخت</button><button class="btn light" id="profileEdit">ویرایش اطلاعات پایه</button></div>
+ <div class="profile-section" id="renewSection"><h4>تمدید عضویت برای ماه‌های آینده</h4>
+ <div class="profile-form">
+ <div class="field"><label>مدت تمدید</label><select id="renewMonths"><option value="1">۱ ماه</option><option value="2">۲ ماه</option><option value="3">۳ ماه</option><option value="6">۶ ماه</option></select></div>
+ <div class="field"><label>نوع طرح / خدمات</label><select id="renewPlan"><option>عادی</option><option>تردمیل</option><option>کاردیو و تردمیل</option><option>ویژه</option></select></div>
+ <div class="field"><label>شهریه این دوره (تومان)</label><input id="renewPrice" type="number" min="0" value="${price}"></div>
+ <div class="field"><label>مبلغ پرداخت‌شده هنگام تمدید</label><input id="renewPaid" type="number" min="0" value="0"></div>
+ </div><p class="hint">تمدید از تاریخ پایان قبلی محاسبه می‌شود، نه از روز پرداخت؛ بنابراین دیر پرداخت کردن باعث جابه‌جایی تاریخ مبنای عضویت نمی‌شود.</p>
+ <div class="profile-actions"><button class="btn gold" id="applyRenew">ثبت تمدید و تغییر شهریه</button></div></div>
+ <div class="profile-section"><h4>وضعیت پرداخت دوره جاری</h4>
+ <div class="profile-form"><div class="field"><label>وضعیت شهریه</label><select id="profilePayStatus"><option value="paid" ${p.payment==='paid'?'selected':''}>پرداخت کامل</option><option value="partial" ${p.payment==='partial'?'selected':''}>پرداخت بخشی</option><option value="unpaid" ${p.payment==='unpaid'?'selected':''}>پرداخت نشده</option></select></div><div class="field"><label>مبلغ پرداخت‌شده (تومان)</label><input id="profilePaidAmount" type="number" min="0" max="${price}" value="${paid}"></div></div><div class="profile-actions"><button class="btn" id="saveProfilePayment">ذخیره وضعیت پرداخت</button></div></div>
+ <div class="profile-section"><h4>تاریخچه ثبت‌نام و تمدیدها</h4><div class="table-wrap"><table class="history-table"><thead><tr><th>نوع</th><th>تاریخ تمدید</th><th>مدت</th><th>طرح</th><th>شهریه</th><th>پرداختی</th><th>عملیات</th></tr></thead><tbody>${history.map((h,i)=>{let ri=i-1;return `<tr><td>${h.label}</td><td>${dateFa(h.date)}</td><td>${fa(h.months)} ماه</td><td>${esc(h.plan||'عادی')}</td><td>${money(h.price||0)}</td><td>${money(h.paid||0)}</td><td>${ri>=0?`<button type="button" class="mini" data-edit-renewal="${ri}">ویرایش</button>`:'—'}</td></tr>`}).join('')}</tbody></table></div></div>
+ <div class="profile-actions"><button class="btn light" id="detailClose">بستن پروفایل</button></div>`;
+ $('memberModal').classList.remove('hidden');
+ $('detailClose').onclick=()=>$('memberModal').classList.add('hidden');
+ $('profilePayment').onclick=()=>{$('profilePayStatus').focus();$('profilePayStatus').scrollIntoView({behavior:'smooth',block:'center'})};
+ $('saveProfilePayment').onclick=()=>{let mode=$('profilePayStatus').value,n=Number(normalizeDigits($('profilePaidAmount').value));if(!Number.isFinite(n)||n<0||n>price){alert('مبلغ پرداختی باید بین صفر و شهریه باشد.');return}if(mode==='paid')n=price;if(mode==='unpaid')n=0;let delta=n-(Number(p.paid_amount)||0);if(delta!==0)recordPayment(p,delta,delta>0?'دریافت شهریه':'اصلاح/بازپرداخت شهریه');p.paid_amount=n;p.payment=n>=price?'paid':n>0?'partial':'unpaid';save();showMember(p)};
+ $('applyRenew').onclick=()=>{let months=Number(normalizeDigits($('renewMonths').value)),newPrice=Number(normalizeDigits($('renewPrice').value)),newPaid=Number(normalizeDigits($('renewPaid').value)),plan=$('renewPlan').value;if(![1,2,3,6].includes(months)){alert('مدت تمدید باید ۱، ۲، ۳ یا ۶ ماه باشد.');return}if(!Number.isFinite(newPrice)||newPrice<0||!Number.isFinite(newPaid)||newPaid<0||newPaid>newPrice){alert('مبلغ تمدید یا پرداختی معتبر نیست.');return}let previousEnd=info(p).end,renewalId='ren_'+Math.random().toString(36).slice(2,10),paidAt=todayISO();p.renewals=p.renewals||[];p.renewals.push({id:renewalId,date:previousEnd,months,price:newPrice,paid:newPaid,plan,createdAt:todayISO(),paidAt});if(newPaid>0)recordPayment(p,newPaid,'پرداخت تمدید',paidAt,renewalId);p.price=newPrice;p.paid_amount=newPaid;p.payment=newPaid>=newPrice?'paid':newPaid>0?'partial':'unpaid';p.plan=plan;save();showMember(p)};
+ $('memberDetails').onclick=e=>{let btn=e.target.closest('[data-edit-renewal]');if(!btn)return;let idx=Number(btn.dataset.editRenewal),r=p.renewals?.[idx];if(!r)return;let dateFaInput=prompt('تاریخ شروع تمدید (شمسی، مانند ۱۴۰۵/۰۸/۲۶):',jalaliParts(r.date));if(dateFaInput===null)return;let dateISO=jalaliToISO(dateFaInput);if(!dateISO){alert('تاریخ شمسی معتبر نیست.');return}let months=Number(normalizeDigits(prompt('مدت تمدید: ۱، ۲، ۳ یا ۶ ماه',String(r.months))));if(![1,2,3,6].includes(months)){alert('مدت تمدید معتبر نیست.');return}let price=Number(normalizeDigits(prompt('شهریه این تمدید (تومان):',String(r.price))));if(!Number.isFinite(price)||price<0){alert('مبلغ شهریه معتبر نیست.');return}let paid=Number(normalizeDigits(prompt('مبلغ پرداخت‌شده این تمدید (تومان):',String(r.paid||0))));if(!Number.isFinite(paid)||paid<0||paid>price){alert('مبلغ پرداختی معتبر نیست.');return}let plan=prompt('نوع طرح:',r.plan||'عادی');if(plan===null)return;let paidAtInput=prompt('تاریخ دریافت وجه (شمسی):',jalaliParts(r.paidAt||r.date));if(paidAtInput===null)return;let paidAt=jalaliToISO(paidAtInput);if(!paidAt){alert('تاریخ دریافت معتبر نیست.');return}let oldPaidAt=r.paidAt||r.date,oldPaid=Number(r.paid)||0;r.date=dateISO;r.months=months;r.price=price;r.paid=paid;r.plan=plan;r.paidAt=paidAt;let tx=(p.payments||[]).find(t=>t.relatedId===r.id);if(!tx)tx=(p.payments||[]).find(t=>t.note==='پرداخت تمدید'&&t.date===oldPaidAt&&Number(t.amount)===oldPaid);if(tx){if(paid>0){tx.amount=paid;tx.date=paidAt;tx.relatedId=r.id;tx.note='پرداخت تمدید'}else p.payments=p.payments.filter(t=>t!==tx)}else if(paid>0)recordPayment(p,paid,'پرداخت تمدید',paidAt,r.id);if(idx===p.renewals.length-1){p.price=price;p.paid_amount=paid;p.payment=paid>=price?'paid':paid>0?'partial':'unpaid';p.plan=plan}save();showMember(p)};
+ $('profileEdit').onclick=()=>{$('memberModal').classList.add('hidden');$('editId').value=p.id;$('name').value=p.name;$('phone').value=p.phone;$('join').value=p.join;$('joinJalali').value=jalaliParts(p.join);$('duration').value=p.duration;$('price').value=p.price;$('payment').value=p.payment||'unpaid';$('paidAmount').value=p.paid_amount||0;$('paidAmountWrap').classList.toggle('hidden',$('payment').value!=='partial');$('formTitle').textContent='ویرایش اطلاعات عضو';$('saveBtn').textContent='ذخیره تغییرات';$('cancelEdit').classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})};
+}
+
+
+const jalaliMonths=['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
+let pickerTarget=null,pickerYear=0,pickerMonth=0,pickerValue='';
+function currentJalali(){let parts=new Intl.DateTimeFormat('en-u-ca-persian-nu-latn',{year:'numeric',month:'numeric',day:'numeric',timeZone:'Asia/Tehran'}).formatToParts(new Date()),o={};parts.forEach(x=>o[x.type]=x.value);return {y:+o.year,m:+o.month,d:+o.day}}
+function openJalaliPicker(target){
+ pickerTarget=target;let value=$(target).value,match=normalizeDigits(value).match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})$/),now=currentJalali();
+ pickerYear=match?+match[1]:now.y;pickerMonth=match?+match[2]:now.m;pickerValue=match?`${match[1]}/${String(+match[2]).padStart(2,'0')}/${String(+match[3]).padStart(2,'0')}`:'';
+ let years='';for(let y=now.y-10;y<=now.y+10;y++)years+=`<option value="${y}" ${y===pickerYear?'selected':''}>${fa(y)}</option>`;
+ $('pickerYear').innerHTML=years;$('pickerMonth').innerHTML=jalaliMonths.map((m,i)=>`<option value="${i+1}" ${i+1===pickerMonth?'selected':''}>${m}</option>`).join('');
+ $('jalaliPicker').classList.remove('hidden');renderJalaliCalendar();
+}
+function renderJalaliCalendar(){
+ pickerYear=Number($('pickerYear').value);pickerMonth=Number($('pickerMonth').value);
+ let html='',count=pickerMonth<=6?31:pickerMonth<=11?30:30;
+ while(count>0&&!jalaliToISO(`${pickerYear}/${pickerMonth}/${count}`))count--;
+ let first=jalaliToISO(`${pickerYear}/${pickerMonth}/1`),offset=(new Date(first+'T12:00:00').getDay()+1)%7;
+ for(let i=0;i<offset;i++)html+='<button type="button" class="blank" tabindex="-1">۰</button>';
+ let today=currentJalali(),todayKey=`${today.y}/${String(today.m).padStart(2,'0')}/${String(today.d).padStart(2,'0')}`;
+ for(let d=1;d<=count;d++){let key=`${pickerYear}/${String(pickerMonth).padStart(2,'0')}/${String(d).padStart(2,'0')}`,cls=[key===pickerValue?'selected':'',key===todayKey?'today':''].filter(Boolean).join(' ');html+=`<button type="button" class="${cls}" data-jday="${d}">${fa(d)}</button>`}
+ $('pickerDays').innerHTML=html;$('pickerSelected').textContent=pickerValue?`انتخاب‌شده: ${pickerValue.replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d])}`:'یک روز را انتخاب کنید';
+}
+function closeJalaliPicker(){$('jalaliPicker').classList.add('hidden');pickerTarget=null}
+['joinJalali'].forEach(id=>{$(id).addEventListener('click',()=>openJalaliPicker(id));$(id).addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openJalaliPicker(id)}})});
+$('pickerYear').onchange=renderJalaliCalendar;$('pickerMonth').onchange=renderJalaliCalendar;
+$('pickerDays').onclick=e=>{let b=e.target.closest('[data-jday]');if(!b||!pickerTarget)return;let d=Number(b.dataset.jday),value=`${pickerYear}/${String(pickerMonth).padStart(2,'0')}/${String(d).padStart(2,'0')}`,iso=jalaliToISO(value);if(!iso)return;$(pickerTarget).value=value.replace(/\d/g,n=>'۰۱۲۳۴۵۶۷۸۹'[n]);if(pickerTarget==='joinJalali')$('join').value=iso;closeJalaliPicker()};
+$('pickerClose').onclick=closeJalaliPicker;$('jalaliPicker').onclick=e=>{if(e.target===$('jalaliPicker'))closeJalaliPicker()};
+$('pickerToday').onclick=()=>{let t=currentJalali();pickerYear=t.y;pickerMonth=t.m;$('pickerYear').value=t.y;$('pickerMonth').value=t.m;renderJalaliCalendar();let b=$(`.calendar-days [data-jday="${t.d}"]`);if(b)b.click()};
+$('memberForm').onsubmit=e=>{
+ e.preventDefault();
+ let id=$('editId').value,join=jalaliToISO($('joinJalali').value);
+ if(!join){alert('تاریخ شمسی را به شکل ۱۴۰۵/۰۸/۲۶ وارد کنید.');return}
+ let price=Number($('price').value),mode=$('payment').value,paid=mode==='paid'?price:mode==='unpaid'?0:Number($('paidAmount').value||0);
+ if(!Number.isFinite(price)||price<0||!Number.isFinite(paid)||paid<0||paid>price){alert('مبلغ پرداخت‌شده باید بین صفر و مبلغ کل شهریه باشد.');return}
+ let old=people.find(x=>x.id===id),oldPaid=Number(old?.paid_amount)||0,selectedDuration=Number(normalizeDigits($('duration').value));if(![1,2,3,6].includes(selectedDuration)){alert('مدت عضویت معتبر نیست؛ یکی از گزینه‌های ۱، ۲، ۳ یا ۶ ماه را انتخاب کنید.');return}let p={...(old||{}),id:id||crypto.randomUUID(),name:$('name').value.trim(),phone:$('phone').value.trim(),join,duration:selectedDuration,price,payment:paid>=price?'paid':paid>0?'partial':'unpaid',paid_amount:paid,initial_price:old?.initial_price??price,initial_paid:old?.initial_paid??paid,initial_plan:old?.initial_plan??old?.plan??'عادی',renewals:Array.isArray(old?.renewals)?old.renewals:[],plan:old?.plan||'عادی',payments:Array.isArray(old?.payments)?old.payments.slice():[]};
+ if(!p.name||!p.phone)return;
+ if(old){let delta=paid-oldPaid;if(delta!==0)recordPayment(p,delta,delta>0?'دریافت شهریه':'اصلاح/بازپرداخت شهریه')}
+ else {p.initial_price=price;p.initial_paid=paid;p.initial_plan='عادی';p.renewals=[];p.payments=[];recordPayment(p,paid,'پرداخت ثبت‌نام اولیه');people.push(p)}
+ let i=people.findIndex(x=>x.id===id);if(i>=0)people[i]=p;save();reset();
+};
+$('payment').onchange=setPaymentFields;
+$('price').oninput=()=>{if($('payment').value==='paid')$('paidAmount').value=$('price').value};
+$('cancelEdit').onclick=reset;$('search').oninput=render;
+document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));render()});
+$('tbody').onclick=e=>{
+ let b=e.target.closest('button[data-act]');
+ let row=e.target.closest('tr[data-member]');
+ if(!b){if(row){let p=people.find(x=>x.id===row.dataset.member);if(p)showMember(p)}return}
+ let p=people.find(x=>x.id===b.dataset.id);if(!p)return;
+ if(b.dataset.act==='renew'){showMember(p);setTimeout(()=>{$('renewSection')?.scrollIntoView({behavior:'smooth',block:'center'});$('renewMonths')?.focus()},80);return}
+ if(b.dataset.act==='toggle'){let remaining=Math.max(0,Number(p.price)-Number(p.paid_amount||0));let v=prompt('مبلغ پرداخت جدید را وارد کنید (تومان):',String(remaining));if(v===null)return;let n=Number(normalizeDigits(v));if(!Number.isFinite(n)||n<0||n>remaining){alert('مبلغ باید بین صفر و مانده شهریه باشد.');return}p.paid_amount=Number(p.paid_amount||0)+n;recordPayment(p,n,'دریافت شهریه');p.payment=p.paid_amount>=p.price?'paid':p.paid_amount>0?'partial':'unpaid';save()}
+ if(b.dataset.act==='edit'){$('editId').value=p.id;$('name').value=p.name;$('phone').value=p.phone;$('join').value=p.join;$('joinJalali').value=jalaliParts(p.join);$('duration').value=p.duration;$('price').value=p.price;$('payment').value=p.payment||'unpaid';$('paidAmount').value=p.paid_amount||0;$('paidAmountWrap').classList.toggle('hidden',$('payment').value!=='partial');$('formTitle').textContent='ویرایش اطلاعات عضو';$('saveBtn').textContent='ذخیره تغییرات';$('cancelEdit').classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})}
+ if(b.dataset.act==='delete'){deleteId=p.id;$('confirmModal').classList.remove('hidden')}
+};
+$('debtorsBody').onclick=e=>{let row=e.target.closest('[data-debtor-member]');if(row){let p=people.find(x=>x.id===row.dataset.debtorMember);if(p)showMember(p)}};
+$('exportDebtorsBtn').onclick=()=>{
+ let rows=people.filter(p=>['unpaid','partial'].includes(paymentState(p))&&Math.max(0,(Number(p.price)||0)-(Number(p.paid_amount)||0))>0).map(p=>({...p,ix:info(p),paid:Number(p.paid_amount)||0,price:Number(p.price)||0,st:paymentState(p)})).sort((a,b)=>(b.price-b.paid)-(a.price-a.paid));
+ let totalDebt=rows.reduce((sum,p)=>sum+Math.max(0,p.price-p.paid),0);
+ let tableRows=rows.map(p=>`<tr><td>${esc(p.name)}</td><td>${esc(p.phone)}</td><td>${dateFa(p.ix.end)}</td><td>${p.ix.expired?(p.ix.d===0?'سررسید امروز':fa(-p.ix.d)+' روز تأخیر'):fa(p.ix.d)+' روز تا پایان'}</td><td>${money(p.price)}</td><td>${money(p.paid)}</td><td>${money(Math.max(0,p.price-p.paid))}</td><td>${p.st==='partial'?'بخشی پرداخت شده':'پرداخت نشده'}</td></tr>`).join('');
+ let w=window.open('','_blank');if(!w){alert('برای گرفتن PDF، اجازه بازشدن پنجره را در مرورگر فعال کنید.');return}
+ w.document.write(`<!doctype html><html lang="fa" dir="rtl"><meta charset="utf-8"><title>گزارش اعضای بدهکار - باشگاه دوستی</title><style>body{font-family:Tahoma,Arial,sans-serif;padding:25px;color:#222}h1{margin:8px 0 14px}.summary{display:flex;gap:28px;margin:15px 0 25px}.summary b{display:block;margin-top:6px}table{width:100%;border-collapse:collapse;margin:12px 0;font-size:11px}th,td{border:1px solid #ddd;padding:8px;text-align:right}th{background:#f2f0e8}button{padding:9px 16px;border:0;background:#222;color:white;border-radius:7px;margin-bottom:15px}@media print{button{display:none}body{padding:0}@page{size:A4 landscape;margin:12mm}tr{break-inside:avoid}}</style><h1>گزارش اعضای بدهکار باشگاه دوستی</h1><p>تاریخ تهیه گزارش: ${dateFa(todayISO())}</p><div class="summary"><div>تعداد اعضای بدهکار<b>${fa(rows.length)} نفر</b></div><div>مجموع مانده بدهی<b>${money(totalDebt)}</b></div></div><button onclick="window.print()">چاپ / ذخیره به صورت PDF</button><table><thead><tr><th>نام عضو</th><th>تلفن</th><th>پایان عضویت</th><th>مدت تأخیر</th><th>کل شهریه</th><th>پرداختی</th><th>مانده بدهی</th><th>وضعیت</th></tr></thead><tbody>${tableRows||'<tr><td colspan="8">در حال حاضر عضوی با بدهی شهریه وجود ندارد.</td></tr>'}</tbody></table></html>`);
+ w.document.close();setTimeout(()=>w.print(),350);
+};
+$('saveRent').onclick=()=>{rent=Math.max(0,Number($('rentInput').value||0));localStorage.setItem('dosti_rent_v1',String(rent));render();queueCloudSave()};
+$('editRentBtn').onclick=()=>{let v=prompt('مبلغ جدید اجاره ماهانه باشگاه را به تومان وارد کنید:',String(rent));if(v===null)return;let n=Number(normalizeDigits(v));if(!Number.isFinite(n)||n<0){alert('مبلغ اجاره معتبر نیست.');return}rent=n;localStorage.setItem('dosti_rent_v1',String(rent));render();queueCloudSave()};
+function closeModal(){$('confirmModal').classList.add('hidden');deleteId=null}
+$('closeConfirm').onclick=closeModal;$('cancelDelete').onclick=closeModal;$('confirmDelete').onclick=()=>{people=people.filter(p=>p.id!==deleteId);save();closeModal()};
+$('closeMemberModal').onclick=()=>$('memberModal').classList.add('hidden');
+$('memberModal').onclick=e=>{if(e.target===$('memberModal'))$('memberModal').classList.add('hidden')};
+$('exportBtn').onclick=()=>{
+ let rows=people.map(p=>{let x=info(p),paid=Number(p.paid_amount)||0,st=paymentState(p);return `<tr><td>${esc(p.name)}</td><td>${esc(p.phone)}</td><td>${dateFa(p.join)}</td><td>${dateFa(x.end)}</td><td>${fa(p.duration)} ماه</td><td>${money(p.price)}</td><td>${money(paid)}</td><td>${st==='paid'?'پرداخت شده':st==='pending'?'در انتظار سررسید':st==='partial'?'پرداخت بخشی':'پرداخت نشده'}</td></tr>`}).join('');
+ let payments=people.flatMap(p=>(p.payments||[]).map(t=>({name:p.name,date:t.date,amount:Number(t.amount)||0,note:t.note||'پرداخت'}))).sort((a,b)=>a.date.localeCompare(b.date));
+ let paymentRows=payments.map(t=>`<tr><td>${esc(t.name)}</td><td>${dateFa(t.date)}</td><td>${esc(t.note)}</td><td>${money(t.amount)}</td></tr>`).join('');
+ let w=window.open('','_blank');if(!w){alert('برای گرفتن PDF، اجازه بازشدن پنجره را در مرورگر فعال کنید.');return}
+ w.document.write(`<!doctype html><html lang="fa" dir="rtl"><meta charset="utf-8"><title>گزارش باشگاه دوستی</title><style>body{font-family:Tahoma,Arial,sans-serif;padding:25px;color:#222}h1,h2{margin:8px 0 14px}p{color:#555}.summary{display:flex;gap:24px;flex-wrap:wrap;margin:15px 0 25px}.summary b{display:block;margin-top:5px}table{width:100%;border-collapse:collapse;margin:12px 0 25px;font-size:11px}th,td{border:1px solid #ddd;padding:8px;text-align:right}th{background:#f2f0e8}button{padding:9px 16px;border:0;background:#222;color:white;border-radius:7px;margin-bottom:15px}@media print{button{display:none}body{padding:0}@page{size:A4 landscape;margin:12mm}tr{break-inside:avoid}}</style><h1>گزارش باشگاه دوستی</h1><p>تاریخ تهیه گزارش: ${dateFa(todayISO())}</p><div class="summary"><div>درآمد ${selectedMonthTitle()}<b>${money(incomeForSelectedMonth())}</b></div><div>اجاره ماهانه<b>${money(rent)}</b></div><div>تعداد اعضا<b>${fa(people.length)}</b></div></div><button onclick="window.print()">چاپ / ذخیره به صورت PDF</button><h2>فهرست اعضا</h2><table><thead><tr><th>نام</th><th>تلفن</th><th>ثبت‌نام</th><th>پایان عضویت</th><th>مدت</th><th>شهریه</th><th>پرداختی دوره</th><th>وضعیت</th></tr></thead><tbody>${rows}</tbody></table><h2>سوابق دریافت‌ها</h2><table><thead><tr><th>نام عضو</th><th>تاریخ دریافت</th><th>شرح</th><th>مبلغ</th></tr></thead><tbody>${paymentRows||'<tr><td colspan="4">تراکنشی ثبت نشده است</td></tr>'}</tbody></table></html>`);
+ w.document.close();setTimeout(()=>w.print(),350);
+};
+document.querySelectorAll('.nav-btn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav-btn').forEach(x=>x.classList.toggle('active',x===b));['dashboard','debtors'].forEach(k=>$(k+'Page').classList.toggle('hidden',k!==b.dataset.page));});
+$('prevMonthBtn').onclick=()=>{selectedMonthOffset--;render()};
+$('nextMonthBtn').onclick=()=>{selectedMonthOffset++;render()};
+$('thisMonthBtn').onclick=()=>{selectedMonthOffset=0;render()};
+updateClock();setInterval(updateClock,1000);setInterval(pullCloudUpdates,6000);reset();render();
+$('cloudLoginForm').addEventListener('submit',async e=>{
+ e.preventDefault();const btn=$('cloudLoginBtn');btn.disabled=true;btn.textContent='در حال ورود…';$('cloudLoginMessage').textContent='';
+ const {data,error}=await cloudClient.auth.signInWithPassword({email:$('cloudEmail').value.trim(),password:$('cloudPassword').value});
+ btn.disabled=false;btn.textContent='ورود امن';
+ if(error){$('cloudLoginMessage').textContent='ورود ناموفق بود: '+error.message;return}
+ await activateCloud(data.session);
+});
+$('cloudLogoutBtn').addEventListener('click',async()=>{cloudReady=false;cloudSession=null;await cloudClient.auth.signOut();showLogin('از حساب خارج شدید.');});
+(async()=>{const {data,error}=await cloudClient.auth.getSession();if(error){showLogin('خطا در بررسی نشست: '+error.message);return}if(data.session)await activateCloud(data.session);else showLogin('برای دسترسی به اطلاعات باشگاه وارد شوید.');})();
+</script>
+
+<footer class="designer-credit" id="designerCredit" style="display:none" dir="rtl" aria-label="درباره طراح سایت">
+  <style>
+    .designer-credit{margin:36px 0 0;padding:22px 18px;text-align:center;border-top:1px solid rgba(128,128,128,.22);color:inherit;font-family:inherit}
+    .designer-credit .designer-inner{max-width:760px;margin:0 auto}
+    .designer-credit h2{font-size:1.05rem;margin:0 0 9px;font-weight:800}
+    .designer-credit p{font-size:.9rem;line-height:2;margin:0 auto 10px;opacity:.82}
+    .designer-credit a{display:inline-block;color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+  </style>
+  <div class="designer-inner">
+    <h2>درباره طراح سایت</h2>
+    <p><strong>مهدیار قرائی</strong>، توسعه‌دهنده وب و طراح تجربه دیجیتال؛ فعال در زمینه طراحی و پیاده‌سازی وب‌سایت‌ها و رابط‌های کاربری با HTML، CSS و JavaScript، با تمرکز بر ساخت تجربه‌های دیجیتال کاربردی و واکنش‌گرا و یادگیری مستمر.</p>
+    <a href="https://mahdiyargharaei-star.github.io" target="_blank" rel="noopener noreferrer">مشاهده وب‌سایت شخصی طراح</a>
+  </div>
+</footer>
+</body></html>
